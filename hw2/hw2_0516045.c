@@ -542,7 +542,7 @@ int main(int argc, char **argv)
 								rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
 								if(result != 0)
 								{
-									char *message = "Board already exist.\n";
+									char *message = "Board is already exist.\n";
 									send(sd, message, strlen(message), 0);
 								}
 								else
@@ -623,7 +623,7 @@ int main(int argc, char **argv)
 								rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
 								if(result == 0)
 								{
-									char *message = "Board does not exist.\n";
+									char *message = "Board is not exist.\n";
 									send(sd, message, strlen(message), 0);
 								}
 								else
@@ -739,7 +739,7 @@ int main(int argc, char **argv)
 							rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
 							if(result == 0)
 							{
-								char *message = "Board does not exist.\n";
+								char *message = "Board is not exist.\n";
 								send(sd, message, strlen(message), 0);
 							}
 							else
@@ -813,7 +813,7 @@ int main(int argc, char **argv)
 							rc = sqlite3_exec(db, sql, get_id, "0", &zErrMsg);
 							if(result == 0)
 							{
-								char *message = "Post does not exist.\n";
+								char *message = "Post is not exist.\n";
 								send(sd, message, strlen(message), 0);
 							}
 							else
@@ -876,7 +876,7 @@ int main(int argc, char **argv)
 								rc = sqlite3_exec(db, sql, get_id, "0", &zErrMsg);
 								if(result == 0)
 								{
-									char *message = "Post does not exist.\n";
+									char *message = "Post is not exist.\n";
 									send(sd, message, strlen(message), 0);
 								}
 								else
@@ -963,7 +963,7 @@ int main(int argc, char **argv)
 								rc = sqlite3_exec(db, sql, get_id, "0", &zErrMsg);
 								if(result == 0)
 								{
-									char *message = "Post does not exist.\n";
+									char *message = "Post is not exist.\n";
 									send(sd, message, strlen(message), 0);
 								}
 								else
@@ -1022,7 +1022,7 @@ int main(int argc, char **argv)
 								rc = sqlite3_exec(db, sql, get_id, "0", &zErrMsg);
 								if(result == 0)
 								{
-									char *message = "Post does not exist.\n";
+									char *message = "Post is not exist.\n";
 									send(sd, message, strlen(message), 0);
 								}
 								else
@@ -1096,7 +1096,7 @@ int main(int argc, char **argv)
 							rc = sqlite3_exec(db, sql, get_id, "0", &zErrMsg);
 							if(result == 0)
 							{
-								char *message = "Post does not exist.\n";
+								char *message = "Post is not exist.\n";
 								send(sd, message, strlen(message), 0);
 							}
 							else
